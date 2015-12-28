@@ -3,7 +3,7 @@ import java.lang.*;
 class Java
 {
   public static void main(String args[]){
-    public TM = new Tmobile();
+    Tmobile TM = new Tmobile();
     System.out.println("Java is successfully run");
   }
 }
