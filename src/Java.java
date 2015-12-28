@@ -1,4 +1,3 @@
-package tmobile;
 import java.lang.*;
 class Java
 {
