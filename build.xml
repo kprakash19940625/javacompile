@@ -4,7 +4,7 @@
     <delete dir="src/"/>
   </target>
   <target name="run" depends="compile">
-    <java classname="Java" classpath="./src/tmobile" fork="true">
+    <java classname="Java" classpath="./src" fork="true">
     </java>
     <!--
     <java classname="Java" classpath="staging" fork="true">
