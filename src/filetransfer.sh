@@ -1,0 +1,1 @@
+$scp -i https://github.com/kprakash19940625/javacompile/tree/master/src/local.pem /var/lib/jenkins/workspace/First\ Project/build/jar/javacompile.jar  ec2-user@ec2-52-90-246-221.compute-1.amazonaws.com:~/
