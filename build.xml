@@ -3,7 +3,7 @@
   <target name="clean">
     <delete dir="src/"/>
   </target>
-  <target name="run" depends="clean compile">
+  <target name="run" depends="compile">
     <java classname="Java" classpath="./src/tmobile" fork="true">
     </java>
     <!--
@@ -11,7 +11,7 @@
     </java>
     -->
   </target>
-  <target name="compile">
+  <target name="compile" depends="clean">
     <javac includeantruntime="false" srcdir="./src" destdir="./src">
     </javac>
     <!--
