@@ -13,10 +13,12 @@
       <arg value="sudo chmod -R 777 build/"/>
       echo -e "\n"|sudo -S command     <redirector inputstring=""/>   
     </exec>
-    -->
     <exec executable="/bin/sh">
         <arg line="-c 'sudo chmod -R 777 bulid'"/>
         <redirector inputstring="\n"/>
+    </exec> -->
+    <exec executable="sudo" inputstring="#10;">
+      <arg line="chmod -R 777 build"/>
     </exec>
     <chmod dir="build/" perm="777"/>
     <delete dir="build"/>
