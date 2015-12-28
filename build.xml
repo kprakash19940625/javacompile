@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="javacompile" name="running java class using ant">
   <target name="run" depends="compile">
-    <java classname="java">
+    <java classname="Java">
       <classpath path="staging"/>
     </java>
   </target>
