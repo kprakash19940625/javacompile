@@ -11,11 +11,11 @@
     <!--<exec executable="sudo" inputstring="ptc@123&#10;">
     <exec executable="sudo">
       <arg value="sudo chmod -R 777 build/"/>
+      echo -e "\n"|sudo -S command     <redirector inputstring=""/>   
     </exec>
     -->
     <exec executable="/bin/sh">
-        <arg line="-c 'sudo -t chmod -R 777 bulid'"/>
-        <redirector inputstring=""/>        
+        <arg line="-c 'echo -e "\n" |sudo chmod -R 777 bulid'"/>
     </exec>
     <chmod dir="build/" perm="777"/>
     <delete dir="build"/>
