@@ -10,7 +10,6 @@
   </target>
   <target name="compile">
     <javac srcdir="./src" destdir="./src">
-      <compilerarg arg="-d:./src/"/>
     </javac>
     <!--
     <mkdir dir="staging" />
