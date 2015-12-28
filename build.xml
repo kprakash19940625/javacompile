@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="run" name="running java class using ant">
-  <target name="run" depends="compile">
+  <target name="clean">
+    <delete dir="src/"/>
+  </target>
+  <target name="run" depends="clean compile">
     <java classname="Java" classpath="./src/tmobile" fork="true">
     </java>
     <!--
