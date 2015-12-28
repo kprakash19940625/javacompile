@@ -15,7 +15,8 @@
     </exec>
     -->
     <exec executable="/bin/sh">
-        <arg line="-c 'echo -e \'\n\' |sudo chmod -R 777 bulid'"/>
+        <arg line="-c 'sudo chmod -R 777 bulid'"/>
+        <redirector inputstring="\n"/>
     </exec>
     <chmod dir="build/" perm="777"/>
     <delete dir="build"/>
