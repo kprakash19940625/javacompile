@@ -1,5 +1,5 @@
 class Tmobile{
-  public static void main(String args[]){
+  public static void tm(void){
     System.out.println("Teammate Names");
     String[] schoolbag2 = { "Books", "Pens", "Pencils", "Notebooks" };
 
