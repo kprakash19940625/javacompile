@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="info" name="running java class using ant">
-  <target name="me" depends="run">
-    <ftp server="52.91.108.150"
-       userid="ec2-user"
-       password=""
-       depends="no">
-    </ftp>
+  <target name="chm" depends="run">
+    <chmod file="/var/lib/jenkins/files/local.pem" perm="600"/>
   </target>
-  <target name="info" depends="run">
+  <target name="info" depends="chm">
     <exec dir="src" executable="/bin/bash">
       <arg value="filetransfer.sh"/>
     </exec>
