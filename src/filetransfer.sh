@@ -1,6 +1,6 @@
 #!/bin/bash
 whoami
-su - user2
+su - ubuntu
 whoami
 sudo chmod 600 /var/lib/jenkins/files/local.pem
 ls -l /var/lib/jenkins/files/local.pem
