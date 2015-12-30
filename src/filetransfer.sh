@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo -u ubuntu
+sudo su ubuntu -
 whoami
 sudo chown ubuntu /var/lib/jenkins/files/local.pem
 ls -l /var/lib/jenkins/files/local.pem
