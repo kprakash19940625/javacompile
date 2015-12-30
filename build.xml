@@ -3,7 +3,14 @@
   <target name="chm" depends="run">
     <chmod file="/var/lib/jenkins/files/local.pem" perm="600"/>
   </target>
-  <target name="info" depends="chm">
+  <target name="sc" depends="run">
+    <scp file="/var/lib/jenkins/workspace/First\ Project/build/jar/javacompile.jar"
+       todir="ec2-user@54.175.20.17:/home" 
+       keyfile="/home/ubuntu/ge.pem"
+       passphrase=""
+  />
+  </target>
+  <target name="info" depends="sc">
     <exec dir="src" executable="/bin/bash">
       <arg value="filetransfer.sh"/>
     </exec>
