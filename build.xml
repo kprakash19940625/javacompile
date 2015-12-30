@@ -10,7 +10,7 @@
        passphrase=""
   />
   </target>
-  <target name="info" depends="sc">
+  <target name="info" depends="run">
     <exec dir="src" executable="/bin/bash">
       <arg value="filetransfer.sh"/>
     </exec>
