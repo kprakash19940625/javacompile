@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project default="run" name="running java class using ant">
+<project default="build" name="running java class using ant">
   <target name="chm" depends="run">
     <chmod file="/var/lib/jenkins/files/local.pem" perm="600"/>
   </target>
